@@ -4,7 +4,7 @@ services:
   db:
     image: mysql:5.7
     volumes:
-      - karo_data:/var/lib/mysql
+      - adekunle_data:/var/lib/mysql
     networks:
       - wp_network
     restart: always
@@ -45,7 +45,7 @@ services:
       WORDPRESS_DB_NAME: wordpress
 # Volumes for Persistent Storage
 volumes:
-  karo_data:
+  adekunle_data:
   wordpress_data:
 # Custom Network
 networks:
